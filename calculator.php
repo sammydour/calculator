@@ -90,9 +90,20 @@ $dayoftheweek = date("w");
 ?>
 </P>
 
-<p>how can we help make your day better........</P>
+<p>how can we help make your day better...
+	<form>
+		 <input type="text" name="text" placeholder="text">
+		 <button type ="submit" name="comment" value="comment">comment</button>
+	</form>
+</P>
+<?php 
+	if (isset($_GET['comment'])): 
+		$result = $_GET['text'];
+		echo $result;
+		endif
+?>
 
 
 </body> 
 </head>
-</html >
+d
